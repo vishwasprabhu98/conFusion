@@ -2,11 +2,19 @@
 	color:black;
 }
 
-.body{
+body{
 	padding: 50px 0px 0px 0px;
 	z-index: 0;
 }
 
 .navbar-dark{
 	background-color:rgb(201, 113, 201);
+}
+
+.pad{
+	padding-top: 50px;
+}
+
+span{
+	color: black;
 }
