@@ -315,9 +315,9 @@
     <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
-            $('.carousel').carousel( { interval : 1000 });
+            $('.carousel').carousel( { interval : 500 });
             $(".carousel").carousel('cycle');
-            $("#carouselButton").click(function(){
+            $("#carouselExampleIndicators").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $(".carousel").carousel('pause');
                     $("#carouselButton").children("span").removeClass('fa-pause');
@@ -329,6 +329,7 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+            
         });
     </script>
 </body>
