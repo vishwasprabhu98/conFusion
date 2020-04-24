@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    
+    <!-- endbuild -->
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -268,7 +269,7 @@
     </div> -->
 
 
-    <footer class="jumbotron">
+    <footer class="footer">
         <div class="container">
             <div class="row">             
                 <div class="col-4 col-sm-2">
@@ -313,33 +314,12 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-            $('.carousel').carousel( { interval : 500 });
-            $(".carousel").carousel('cycle');
-            $("#carouselExampleIndicators").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $(".carousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $(".carousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-
-            $('#modalDisplay').click( function() {
-                $('#loginModal').modal('toggle');
-            });
-            
-        });
-    </script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
