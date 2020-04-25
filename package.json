@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
+  "engines": {
+    "node": "12.10.0",
+    "npm": "6.x"
+  },
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
